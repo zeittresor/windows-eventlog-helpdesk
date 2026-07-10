@@ -1,0 +1,20 @@
+{
+  "name": "Sepia",
+  "window": "#efe5cf",
+  "panel": "#f8efd9",
+  "panel_alt": "#e2d1ad",
+  "text": "#3f3122",
+  "muted": "#79664e",
+  "accent": "#9a5b24",
+  "accent_hover": "#b46b2b",
+  "border": "#b89c73",
+  "selection": "#a7652a",
+  "selection_text": "#fffaf0",
+  "input": "#fff8e8",
+  "button": "#e8d8ba",
+  "button_hover": "#dcc59f",
+  "disabled": "#d8cdb7",
+  "disabled_text": "#94846c",
+  "tooltip": "#4b3827",
+  "tooltip_text": "#fff5df"
+}

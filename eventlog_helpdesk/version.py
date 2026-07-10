@@ -1,0 +1,5 @@
+APP_NAME = "Windows EventLog Helpdesk"
+VERSION = "0.1.0"
+RELEASE_DATE = "2026-07-10"
+ORGANIZATION = "zeittresor"
+SOURCE_URL = "https://github.com/zeittresor/windows-eventlog-helpdesk"

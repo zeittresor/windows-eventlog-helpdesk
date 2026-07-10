@@ -1,0 +1,30 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{font-family:Segoe UI,Arial,sans-serif;line-height:1.45;margin:22px;max-width:1050px}h1,h2{color:#2aa98f}code,pre{font-family:Consolas,monospace}pre{padding:10px;border:1px solid #567;white-space:pre-wrap}table{border-collapse:collapse;width:100%}th,td{border:1px solid #789;padding:6px;text-align:left}.note{padding:10px;border-left:4px solid #2aa98f}</style></head><body>
+<h1>Windows EventLog Helpdesk</h1>
+<p><b>Version {{VERSION}}</b> · {{RELEASE_DATE}}</p>
+<p>This application converts live Windows event-log channels or offline EVTX/EVT files into complete Markdown evidence, performs local Ollama-based diagnostics, and keeps a follow-up conversation grounded in the loaded events and the latest analysis.</p>
+<h2>Recommended workflow</h2>
+<ol><li>Open <b>Event Logs</b>, refresh the tree, select a channel, and load it. Protected channels such as Security may require running the application as administrator.</li><li>Set the event limit. A value of <b>0 / All</b> reads the complete source; large logs may consume substantial memory and time.</li><li>Optionally use a native Event Log XPath query, for example <code>*[System[(Level=1 or Level=2 or Level=3)]]</code>.</li><li>Review the table and complete event detail. The table search and severity filter do not alter the source data.</li><li>Open <b>Ollama Analysis</b>, choose a model and answer language, then run the analysis.</li><li>Use <b>Talk About the System Events</b> for grounded follow-up questions.</li></ol>
+<h2>Data completeness</h2>
+<p class="note">Every complete Markdown export contains, for every event, a normalized summary, the complete flattened XML field map, and the original raw XML. This is the evidence-preserving export. PDF reports are derived summaries and are not a substitute for the Markdown evidence file.</p>
+<h2>Ollama and non-blocking analysis</h2>
+<p>The default endpoint is <code>http://127.0.0.1:11434</code>. Model discovery uses <code>/api/tags</code>; analysis uses streamed Ollama requests in background workers. The interface remains usable and a progress bar remains visible until the answer arrives.</p>
+<p><b>Auto mode</b> uses a single request when the evidence fits the configured context budget. Larger evidence is split into diagnostic chunks, analyzed separately, and synthesized into a final report. Raw XML is excluded from the AI context by default because it expands context quickly, but it remains present in the complete Markdown export.</p>
+<h2>Diagnostic prompt behavior</h2>
+<p>The built-in prompt instructs the model to report only actionable faults, distinguish confirmed evidence from hypotheses, cite timestamps/providers/Event IDs/record IDs, avoid invented facts, prefer reversible remediation, and flag administrator, reboot, outage, registry, or data-loss implications. Event messages are treated as untrusted data so instructions embedded in logs are ignored.</p>
+<h2>System Context</h2>
+<p>The optional snapshot collects basic OS and hardware data, uptime, memory, disk usage, network addresses, reboot-pending markers, automatic services that are not running, and recent hotfixes. Review or edit the snapshot before sending it to Ollama. No snapshot is sent anywhere unless an Ollama analysis or chat request is made.</p>
+<h2>Privacy</h2>
+<p>With the default endpoint, event data remains on the local system and is sent only to the local Ollama service. If the endpoint is changed to another computer, the selected diagnostic context is sent to that host. The application does not use a cloud service by itself.</p>
+<h2>Reports and storage</h2>
+<p>Complete Markdown evidence is automatically saved after loading by default. A PDF report is automatically created after a successful analysis by default. Both behaviors and the output directory can be changed in Settings. PDF reports contain calculated severity/provider charts, tables, the Ollama diagnosis, and the optional system snapshot.</p>
+<h2>Windows text-to-speech</h2>
+<p>Enable TTS in Settings, choose a Windows SAPI voice, rate, and volume, then use Speak on the analysis or chat answer. Automatic speech after an analysis is optional and disabled by default.</p>
+<h2>Troubleshooting</h2>
+<table><tr><th>Problem</th><th>Likely action</th></tr>
+<tr><td>Security log cannot be opened</td><td>Restart the application as administrator.</td></tr>
+<tr><td>No Ollama models appear</td><td>Start Ollama, verify the endpoint, run <code>ollama list</code>, then refresh models.</td></tr>
+<tr><td>Analysis is very slow</td><td>Reduce the event limit, use warnings/errors scope, reduce raw XML context, or select a faster model.</td></tr>
+<tr><td>Very large EVTX export</td><td>Use a filtered XPath or process a time/severity subset first. Complete conversion of huge logs can create very large Markdown files.</td></tr></table>
+<h2>Source and updates</h2><p><a href="{{SOURCE_URL}}">{{SOURCE_URL}}</a></p>
+</body></html>

@@ -1,0 +1,20 @@
+{
+  "name": "Purple",
+  "window": "#171122",
+  "panel": "#21172f",
+  "panel_alt": "#302142",
+  "text": "#f4ecff",
+  "muted": "#c2addd",
+  "accent": "#9b5de5",
+  "accent_hover": "#b67af2",
+  "border": "#664785",
+  "selection": "#7040a8",
+  "selection_text": "#ffffff",
+  "input": "#120d1a",
+  "button": "#342248",
+  "button_hover": "#493061",
+  "disabled": "#2c2632",
+  "disabled_text": "#877995",
+  "tooltip": "#241331",
+  "tooltip_text": "#fbf3ff"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Dark",
+  "window": "#171a1f",
+  "panel": "#20242b",
+  "panel_alt": "#292f38",
+  "text": "#edf2f7",
+  "muted": "#a9b3bf",
+  "accent": "#4ea1ff",
+  "accent_hover": "#78b8ff",
+  "border": "#46505d",
+  "selection": "#2769a8",
+  "selection_text": "#ffffff",
+  "input": "#15191e",
+  "button": "#2b323c",
+  "button_hover": "#37414e",
+  "disabled": "#292d33",
+  "disabled_text": "#747e89",
+  "tooltip": "#111820",
+  "tooltip_text": "#f2f6fa"
+}

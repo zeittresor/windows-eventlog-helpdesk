@@ -1,0 +1,20 @@
+{
+  "name": "Aurora",
+  "window": "#07151b",
+  "panel": "#0b2028",
+  "panel_alt": "#102e38",
+  "text": "#e8fbff",
+  "muted": "#94c8ca",
+  "accent": "#2bd6b4",
+  "accent_hover": "#5ce6ca",
+  "border": "#285e69",
+  "selection": "#216f79",
+  "selection_text": "#ffffff",
+  "input": "#061117",
+  "button": "#11333d",
+  "button_hover": "#174854",
+  "disabled": "#20353a",
+  "disabled_text": "#6d9296",
+  "tooltip": "#071f27",
+  "tooltip_text": "#e8ffff"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Hellfire",
+  "window": "#180706",
+  "panel": "#240b08",
+  "panel_alt": "#38120d",
+  "text": "#fff0e8",
+  "muted": "#d7a18f",
+  "accent": "#e23b16",
+  "accent_hover": "#ff5a2f",
+  "border": "#7a2b1c",
+  "selection": "#a51e0b",
+  "selection_text": "#ffffff",
+  "input": "#120403",
+  "button": "#3a120c",
+  "button_hover": "#53190f",
+  "disabled": "#2e1915",
+  "disabled_text": "#9b6e62",
+  "tooltip": "#2b0905",
+  "tooltip_text": "#ffe7dd"
+}

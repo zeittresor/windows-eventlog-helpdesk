@@ -1,0 +1,8 @@
+{
+  "name": "Windows EventLog Helpdesk",
+  "version": "0.1.0",
+  "release_date": "2026-07-10",
+  "source": "https://github.com/zeittresor/windows-eventlog-helpdesk",
+  "minimum_python": "3.10",
+  "platform": "Windows 10/11"
+}

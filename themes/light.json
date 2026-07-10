@@ -1,0 +1,20 @@
+{
+  "name": "Light",
+  "window": "#f2f4f7",
+  "panel": "#ffffff",
+  "panel_alt": "#e9edf2",
+  "text": "#18212b",
+  "muted": "#5d6875",
+  "accent": "#2563eb",
+  "accent_hover": "#1d4ed8",
+  "border": "#b9c2cc",
+  "selection": "#2563eb",
+  "selection_text": "#ffffff",
+  "input": "#ffffff",
+  "button": "#edf1f5",
+  "button_hover": "#dfe7ef",
+  "disabled": "#d9dee4",
+  "disabled_text": "#89939e",
+  "tooltip": "#fff8d6",
+  "tooltip_text": "#202020"
+}

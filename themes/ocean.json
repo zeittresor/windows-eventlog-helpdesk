@@ -1,0 +1,20 @@
+{
+  "name": "Ocean",
+  "window": "#081c2a",
+  "panel": "#0d2738",
+  "panel_alt": "#12364a",
+  "text": "#e6f6ff",
+  "muted": "#9ec6d7",
+  "accent": "#22b8cf",
+  "accent_hover": "#49cfe3",
+  "border": "#2b6176",
+  "selection": "#117b91",
+  "selection_text": "#ffffff",
+  "input": "#071822",
+  "button": "#123244",
+  "button_hover": "#19485f",
+  "disabled": "#203540",
+  "disabled_text": "#6f97a8",
+  "tooltip": "#062330",
+  "tooltip_text": "#dff9ff"
+}
