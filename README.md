@@ -3,6 +3,8 @@
 **Version 0.1.0 — 2026-07-10**  
 Windows 10/11 · Python 3.10+ · PyQt6 · local Ollama
 
+<img width="1503" height="941" alt="helpdesk" src="https://github.com/user-attachments/assets/5a72f665-c5aa-4c9b-b911-1df810ee08b7" />
+
 Windows EventLog Helpdesk is a Windows-first desktop application for:
 
 - reading live Windows Event Log channels directly from the current system;
